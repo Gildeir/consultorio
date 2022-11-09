@@ -1,0 +1,19 @@
+
+INSERT INTO dbo.Pacientes(nome, email, celular, cpf)
+VALUES ( 'Lucas', 'lucas@gmail.com', '654822465', '00000000000'),
+( 'Pedro', 'lazaro@gmail.com', '654822465', '00000000000');
+
+INSERT INTO dbo.Especialidades(nome, ativa)
+VALUES ('Psicológo', 'true');
+
+INSERT INTO dbo.Profissionais(nome, ativo)
+VALUES ('Pamela', 'true');
+	
+INSERT INTO tb_profissional_especialidade(id_profissional, id_especialidade)
+VALUES (1, 1);
+
+INSERT INTO dbo.Consultas(data_horario, status, preco, id_paciente, id_especialidade, id_profissional)
+VALUES ('2021-09-30 13:23:44', 1, 80.90, 1, 1, 1);
+
+INSERT INTO dbo.Consultas(data_horario, status, preco, id_paciente, id_especialidade, id_profissional)
+VALUES ('2021-09-30 13:23:44', 1, 80.90, 2, 1, 1);
